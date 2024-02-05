@@ -473,21 +473,21 @@ function init_gear_sets()
     sets.midcast.Utsusemi = sets.midcast.SpellInterrupt
 
     sets.midcast.Cure = {
-        main="Daybreak", --30
-        sub="Sors Shield", --3/(-5)
+        main="Daybreak",
+        sub="Sors Shield",
         ammo="Staunch Tathlum",
-		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
-		body={ name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}},
-		hands={ name="Kaykaus Cuffs", augments={'MP+60','Spell interruption rate down +10%','"Cure" spellcasting time -5%',}},
-		legs={ name="Chironic Hose", augments={'Mag. Acc.+20','Pet: Mag. Acc.+22','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
-		neck="Nodens Gorget",
-		waist="Rumination Sash",
-		left_ear="Mendi. Earring",
-		right_ear="Etiolation Earring",
-		left_ring="Lebeche Ring",
-		right_ring="Sirona's Ring",
-		back="Solemnity Cape",
+        head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
+        body="Bunzi's Robe",
+        hands={ name="Kaykaus Cuffs", augments={'MP+60','Spell interruption rate down +10%','"Cure" spellcasting time -5%',}},
+        legs={ name="Chironic Hose", augments={'Mag. Acc.+20','Pet: Mag. Acc.+22','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+        feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+        neck="Nodens Gorget",
+        waist="Rumination Sash",
+        left_ear="Mendi. Earring",
+        right_ear="Etiolation Earring",
+        left_ring="Lebeche Ring",
+        right_ring="Sirona's Ring",
+        back="Solemnity Cape",
     }
 
     sets.midcast.CureWeather = set_combine(sets.midcast.Cure, {
@@ -550,19 +550,19 @@ function init_gear_sets()
 
     sets.midcast.EnhancingDuration = {
         main="Oranyan",
-		sub="Enki Strap",
-        ammo="Pemphredo Tathlum",
+        sub="Enki Strap",
+        ammo="Staunch Tathlum",
         head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +9',}},
         body={ name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}},
         hands="Atrophy Gloves +2",
         legs={ name="Telchine Braconi", augments={'Mag. Acc.+22','"Cure" spellcasting time -3%','Enh. Mag. eff. dur. +9',}},
         feet="Leth. Houseaux +3",
         neck={ name="Dls. Torque +2", augments={'Path: A',}},
-        waist="Cascade Belt",
-        left_ear="Etiolation Earring",
-		right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
-        left_ring="Kishar Ring",
-        right_ring="Gelatinous Ring +1",
+        waist="Embla Sash",
+        left_ear="Malignance Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
+        left_ring="Defending Ring",
+        right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
         back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +7','Enh. Mag. eff. dur. +16',}},
     }
 
@@ -594,11 +594,23 @@ function init_gear_sets()
         feet=gear.Telchine_ENH_feet,
         })
 
-    sets.midcast.Refresh = set_combine(sets.midcast.EnhancingDuration, {
-        head="Amalric Coif +1", -- +1
-        body="Atrophy Tabard +3", -- +3
-        legs="Leth. Fuseau +1", -- +2
-        })
+    sets.midcast.Refresh = {
+        main={ name="Crocea Mors", augments={'Path: C',}},
+        sub="Culminus",
+        ammo="Pemphredo Tathlum",
+        head="Befouled Crown",
+        body="Atrophy Tabard +3",
+        hands="Atrophy Gloves +2",
+        legs="Leth. Fuseau +2",
+        feet="Leth. Houseaux +3",
+        neck={ name="Dls. Torque +2", augments={'Path: A',}},
+        waist="Gishdubar Sash",
+        left_ear="Malignance Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
+        left_ring="Defending Ring",
+        right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+        back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +7','Enh. Mag. eff. dur. +16',}},
+    }
 
     sets.midcast.RefreshSelf = {
         waist="Gishdubar Sash",
@@ -652,20 +664,20 @@ function init_gear_sets()
 
     sets.midcast.MndEnfeebles = {
         main={ name="Crocea Mors", augments={'Path: C',}},
-		sub="Thuellaic Ecu +1",
-		ammo="Regal Gem",
-		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
-		body="Atrophy Tabard +3",
-		hands="Leth. Ganth. +3",
-		legs={ name="Chironic Hose", augments={'Mag. Acc.+20','Pet: Mag. Acc.+22','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-		feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
-		neck={ name="Dls. Torque +2", augments={'Path: A',}},
-		waist="Rumination Sash",
-		left_ear="Snotra Earring",
-		right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
-		left_ring="Stikini Ring +1",
-		right_ring="Stikini Ring +1",
-		back={ name="Sucellos's Cape", augments={'INT+12','Mag. Acc+5 /Mag. Dmg.+5','Magic Damage +2','"Fast Cast"+10','Spell interruption rate down-6%',}},
+        sub="Thuellaic Ecu +1",
+        ammo="Regal Gem",
+        head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+        body="Lethargy Sayon +2",
+        hands="Leth. Ganth. +3",
+        legs={ name="Chironic Hose", augments={'Mag. Acc.+20','Pet: Mag. Acc.+22','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+        feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
+        neck={ name="Dls. Torque +2", augments={'Path: A',}},
+        waist="Rumination Sash",
+        left_ear="Malignance Earring",
+        right_ear="Snotra Earring",
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring +1",
+        back={ name="Sucellos's Cape", augments={'INT+12','Mag. Acc+5 /Mag. Dmg.+5','Magic Damage +2','"Fast Cast"+10','Spell interruption rate down-6%',}},
     }
 
     sets.midcast.MndEnfeeblesAcc = set_combine(sets.midcast.MndEnfeebles, {})
@@ -892,13 +904,21 @@ function init_gear_sets()
     sets.defense.MDT = sets.idle.DT
 
     sets.magic_burst = {
-        head="Ea Hat +1", --7/(7)
-        body="Ea Houppe. +1", --9/(9)
-        hands="Amalric Gages +1", --(6)
-        legs="Ea Slops +1", --8/(8)
-        feet="Ea Pigaches +1", --5/(5)
-        neck="Mizu. Kubikazari", --10
-        ring2="Mujin Band", --(5)
+        main="Bunzi's Rod",
+        sub="Culminus",
+        ammo="Pemphredo Tathlum",
+        head="Bunzi's Hat",
+        body="Bunzi's Robe",
+        hands="Bunzi's Gloves",
+        legs="Leth. Fuseau +2",
+        feet="Leth. Houseaux +3",
+        neck="Sibyl Scarf",
+        waist="Carrier's Sash",
+        left_ear="Regal Earring",
+        right_ear="Malignance Earring",
+        left_ring="Defending Ring",
+        right_ring="Mujin Band",
+        back={ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+5','"Store TP"+10','Damage taken-5%',}},
         }
 
     sets.Kiting = {
