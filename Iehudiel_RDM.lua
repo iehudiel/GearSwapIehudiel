@@ -609,12 +609,23 @@ function init_gear_sets()
         waist="Siegel Sash",
         })
 
-    sets.midcast['Phalanx'] = set_combine(sets.midcast.EnhancingDuration, {
-        body=gear.Taeon_Phalanx_body, --3(10)
-        hands=gear.Taeon_Phalanx_hands, --3(10)
-        legs=gear.Taeon_Phalanx_legs, --3(10)
-        feet=gear.Taeon_Phalanx_feet, --3(10)
-        })
+    sets.midcast['Phalanx'] = {
+        main="Sakpata's Sword",
+        sub={ name="Egeking", augments={'Accuracy+38','Mag. Acc.+22','"Fast Cast"+6',}},
+        ammo="Pemphredo Tathlum",
+        head={ name="Taeon Chapeau", augments={'Spell interruption rate down -9%','Phalanx +3',}},
+        body={ name="Taeon Tabard", augments={'Spell interruption rate down -8%','Phalanx +3',}},
+        hands={ name="Taeon Gloves", augments={'Spell interruption rate down -10%','Phalanx +3',}},
+        legs={ name="Taeon Tights", augments={'Spell interruption rate down -10%','Phalanx +3',}},
+        feet={ name="Taeon Boots", augments={'Spell interruption rate down -9%','Phalanx +3',}},
+        neck={ name="Dls. Torque +2", augments={'Path: A',}},
+        waist="Embla Sash",
+        left_ear="Etiolation Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring +1",
+        back={ name="Ghostfyre Cape", augments={'Enfb.mag. skill +7','Enh. Mag. eff. dur. +16',}},
+    }
 
     sets.midcast.Aquaveil = set_combine(sets.midcast.EnhancingDuration, {
         ammo="Staunch Tathlum +1",
