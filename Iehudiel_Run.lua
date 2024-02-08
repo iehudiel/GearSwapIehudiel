@@ -59,18 +59,18 @@ end
 function init_gear_sets()
     sets.enmity = {
         ammo="Staunch Tathlum",
-        head="Agwu's Cap",
+        head="Erilaz Galea +2",
         body="Emet Harness +1",
-        hands={ name="Rawhide Gloves", augments={'Mag. Acc.+15','INT+7','MND+7',}},
-        legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-        feet={ name="Taeon Boots", augments={'Spell interruption rate down -9%','Phalanx +3',}},
+        hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+        legs="Eri. Leg Guards +2",
+        feet="Erilaz Greaves +2",
         neck="Moonlight Necklace",
         waist="Sulla Belt",
-        left_ear="Halasz Earring",
-        right_ear="Cryptic Earring",
+        left_ear="Cryptic Earring",
+        right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
         left_ring="Begrudging Ring",
         right_ring="Petrov Ring",
-        back="Ogma's Cape",
+        back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
     }
 
 	--------------------------------------
@@ -84,18 +84,19 @@ function init_gear_sets()
     sets.precast.JA['Battuta'] = set_combine(sets.enmity, {head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},})
     sets.precast.JA['Liement'] = set_combine(sets.enmity, {body={ name="Futhark Coat", augments={'Enhances "Elemental Sforzo" effect',}},})
     sets.precast.JA['Lunge'] = {
-        ammo="Aqreqaq Bomblet",
-        head="Rabid Visor",
-        body="Emet Harness +1",
-        hands="Meg. Gloves +2",
-        legs="Eri. Leg Guards +1",
-        feet="Erilaz Greaves +1",
-        neck="Unmoving Collar",
-        waist="Sulla Belt",
+        sub="Refined Grip +1",
+        ammo="Pemphredo Tathlum",
+        head="Agwu's Cap",
+        body="Agwu's Robe",
+        hands="Agwu's Gages",
+        legs={ name="Agwu's Slops", augments={'Path: A',}},
+        feet="Agwu's Pigaches",
+        neck="Sibyl Scarf",
+        waist="Eschan Stone",
         left_ear="Friomisi Earring",
-        right_ear="Cryptic Earring",
-        left_ring="Begrudging Ring",
-        right_ring="Petrov Ring",
+        right_ear="Hecate's Earring",
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring +1",
         back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
     }
     sets.precast.JA['Swipe'] = sets.precast.JA['Lunge']
@@ -106,19 +107,22 @@ function init_gear_sets()
     sets.precast.JA['Embolden'] = {}
 	sets.precast.JA['Holy Circle'] = sets.enmity
 	sets.precast.JA['Sentinel'] = sets.enmity
-    sets.precast.JA['Vivacious Pulse'] = {ammo="Aqreqaq Bomblet",
-        head="Erilaz Galea +1",
-        body="Emet Harness +1",
-        hands="Meg. Gloves +2",
-        legs="Eri. Leg Guards +1",
-        feet="Erilaz Greaves +1",
-        neck="Unmoving Collar",
-        waist="Sulla Belt",
-        left_ear="Friomisi Earring",
-        right_ear="Cryptic Earring",
-        left_ring="Begrudging Ring",
-        right_ring="Petrov Ring",
-        back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
+    sets.precast.JA['Vivacious Pulse'] = {
+        main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','Weapon skill damage +10%',}},
+        sub="Refined Grip +1",
+        ammo="Staunch Tathlum",
+        head="Erilaz Galea +2",
+        body={ name="Nyame Mail", augments={'Path: B',}},
+        hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+        legs="Rune. Trousers +1",
+        feet="Nyame Sollerets",
+        neck={ name="Warder's Charm +1", augments={'Path: A',}},
+        waist="Plat. Mog. Belt",
+        left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+        right_ear="Tuisto Earring",
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring +1",
+        back="Altruistic Cape",
     }
     sets.precast.JA['One For All'] = {
         ammo="Staunch Tathlum",
@@ -140,21 +144,22 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
     sets.precast.FC = {
+        sub="Refined Grip +1",
         ammo="Staunch Tathlum",
         head="Rune. Bandeau +1",
-        body="Agwu's Robe",
+        body="Erilaz Surcoat +2",
         hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
-        legs={ name="Agwu's Slops", augments={'Path: A',}},
-        feet="Agwu's Pigaches",
-        neck={ name="Loricate Torque +1", augments={'Path: A',}},
-        waist="Flume Belt +1",
-        left_ear="Etiolation Earring",
-        right_ear="Genmei Earring",
+        legs={ name="Futhark Trousers +1", augments={'Enhances "Inspire" effect',}},
+        feet="Nyame Sollerets",
+        neck="Unmoving Collar +1",
+        waist="Plat. Mog. Belt",
+        left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+        right_ear="Etiolation Earring",
         left_ring="Kishar Ring",
-        right_ring="Defending Ring",
+        right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
         back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
-}
-    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {legs="Futhark Trousers +1",head="Erilaz Galea +1",
+    }
+    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {legs="Futhark Trousers +1",head="Erilaz Galea +2",
     body="Emet Harness +1",})
     sets.precast.FC['Utsusemi: Ichi'] = set_combine(sets.precast.FC, {neck='Magoraga beads', back="Mujin Mantle"})
     sets.precast.FC['Utsusemi: Ni'] = set_combine(sets.precast.FC['Utsusemi: Ichi'], {})
@@ -313,14 +318,14 @@ function init_gear_sets()
 	sets.midcast['Temper'] = {
         ammo="Staunch Tathlum",
         head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
-        body="Runeist Coat +1",
+        body="Erilaz Surcoat +2",
         hands="Runeist Mitons +1",
         legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-        feet="Turms Leggings +1",
+        feet="Nyame Sollerets",
         neck="Enhancing Torque",
-        waist="Carrier's Sash",
+        waist="Plat. Mog. Belt",
         left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-        right_ear={ name="Erilaz Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
+        right_ear="Etiolation Earring",
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring +1",
         back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
@@ -334,7 +339,7 @@ function init_gear_sets()
         legs={ name="Taeon Tights", augments={'Spell interruption rate down -10%','Phalanx +3',}},
         feet={ name="Taeon Boots", augments={'Spell interruption rate down -9%','Phalanx +3',}},
         neck={ name="Loricate Torque +1", augments={'Path: A',}},
-        waist="Flume Belt +1",
+        waist="Plat. Mog. Belt",
         left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
         right_ear="Genmei Earring",
         left_ring="Stikini Ring +1",
@@ -344,17 +349,17 @@ function init_gear_sets()
 
     sets.midcast['Regen'] = {
         ammo="Staunch Tathlum",
-        head="Erilaz Galea +1",
+        head="Rune. Bandeau +1",
         body="Runeist Coat +1",
         hands="Turms Mittens +1",
         legs={ name="Futhark Trousers +1", augments={'Enhances "Inspire" effect',}},
         feet="Turms Leggings +1",
-        neck="Loricate Torque +1",
-        waist="Audumbla Sash",
-        left_ear="Odnowa Earring +1",
-        right_ear={ name="Erilaz Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
-        left_ring="Defending Ring",
-        right_ring="Moonbeam Ring",
+        neck={ name="Loricate Torque +1", augments={'Path: A',}},
+        waist="Plat. Mog. Belt",
+        left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+        right_ear="Genmei Earring",
+        left_ring="Stikini Ring +1",
+        right_ring="Defending Ring",
         back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
     }
     sets.midcast['Stoneskin'] = {
@@ -377,12 +382,12 @@ function init_gear_sets()
 	sets.midcast['Foil'] = sets.enmity
 	sets.midcast['Sheep Song'] = {
         ammo="Staunch Tathlum",
-        head="Agwu's Cap",
-        body="Emet Harness +1",
+        head="Erilaz Galea +2",
+        body={ name="Taeon Tabard", augments={'Spell interruption rate down -8%','Phalanx +3',}},
         hands={ name="Rawhide Gloves", augments={'Mag. Acc.+15','INT+7','MND+7',}},
         legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
         feet={ name="Taeon Boots", augments={'Spell interruption rate down -9%','Phalanx +3',}},
-        neck={ name="Loricate Torque +1", augments={'Path: A',}},
+        neck="Moonlight Necklace",
         waist="Sulla Belt",
         left_ear="Halasz Earring",
         right_ear="Cryptic Earring",
@@ -392,12 +397,12 @@ function init_gear_sets()
 	}
 	sets.midcast['Soporific'] = {
         ammo="Staunch Tathlum",
-        head="Agwu's Cap",
-        body="Emet Harness +1",
+        head="Erilaz Galea +2",
+        body={ name="Taeon Tabard", augments={'Spell interruption rate down -8%','Phalanx +3',}},
         hands={ name="Rawhide Gloves", augments={'Mag. Acc.+15','INT+7','MND+7',}},
         legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
         feet={ name="Taeon Boots", augments={'Spell interruption rate down -9%','Phalanx +3',}},
-        neck={ name="Loricate Torque +1", augments={'Path: A',}},
+        neck="Moonlight Necklace",
         waist="Sulla Belt",
         left_ear="Halasz Earring",
         right_ear="Cryptic Earring",
@@ -439,23 +444,23 @@ function init_gear_sets()
 }
 
 	sets.midcast['Banishga'] = {
-    ammo="Staunch Tathlum",
-    head="Agwu's Cap",
-    body="Emet Harness +1",
-    hands={ name="Rawhide Gloves", augments={'Mag. Acc.+15','INT+7','MND+7',}},
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-    feet={ name="Taeon Boots", augments={'Spell interruption rate down -9%','Phalanx +3',}},
-    neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Sulla Belt",
-    left_ear="Halasz Earring",
-    right_ear="Cryptic Earring",
-    left_ring="Begrudging Ring",
-    right_ring="Evanescence Ring",
-    back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
-}
+        ammo="Staunch Tathlum",
+        head="Erilaz Galea +2",
+        body={ name="Taeon Tabard", augments={'Spell interruption rate down -8%','Phalanx +3',}},
+        hands={ name="Rawhide Gloves", augments={'Mag. Acc.+15','INT+7','MND+7',}},
+        legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+        feet={ name="Taeon Boots", augments={'Spell interruption rate down -9%','Phalanx +3',}},
+        neck="Moonlight Necklace",
+        waist="Sulla Belt",
+        left_ear="Halasz Earring",
+        right_ear="Cryptic Earring",
+        left_ring="Begrudging Ring",
+        right_ring="Evanescence Ring",
+        back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
+    }
 	
 	sets.midcast['Refresh'] = {
-        head="Erilaz Galea +1",
+        head="Erilaz Galea +2",
         body="Runeist Coat +1",
     }
 
@@ -464,19 +469,20 @@ function init_gear_sets()
 	--------------------------------------
 
     sets.idle = {
+        main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','Weapon skill damage +10%',}},
         sub="Refined Grip +1",
         ammo="Staunch Tathlum",
-        head="Nyame Helm",
-        body="Nyame Mail",
-        hands="Nyame Gauntlets",
+        head="Erilaz Galea +2",
+        body="Erilaz Surcoat +2",
+        hands="Turms Mittens +1",
         legs="Eri. Leg Guards +2",
-        feet="Nyame Sollerets",
-        neck="Warder's Charm +1",
+        feet="Turms Leggings +1",
+        neck={ name="Warder's Charm +1", augments={'Path: A',}},
         waist="Plat. Mog. Belt",
         left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-        right_ear={ name="Erilaz Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
-        left_ring="Gurebu's Ring",
-        right_ring="Defending Ring",
+        right_ear="Tuisto Earring",
+        left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+        right_ring="Moonlight Ring",
         back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
     }
     
@@ -499,18 +505,19 @@ function init_gear_sets()
     }
 
 	sets.defense.PDT2 = {
+        main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','Weapon skill damage +10%',}},
         sub="Refined Grip +1",
         ammo="Staunch Tathlum",
-        head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
-        body="Runeist Coat +1",
-        hands="Turms Mittens +1",
+        head="Erilaz Galea +2",
+        body="Erilaz Surcoat +2",
+        hands={ name="Nyame Gauntlets", augments={'Path: B',}},
         legs="Eri. Leg Guards +2",
-        feet="Turms Leggings +1",
-        neck={ name="Futhark Torque +2", augments={'Path: A',}},
+        feet="Erilaz Greaves +2",
+        neck={ name="Warder's Charm +1", augments={'Path: A',}},
         waist="Plat. Mog. Belt",
         left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-        right_ear={ name="Erilaz Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
-        left_ring="Defending Ring",
+        right_ear="Tuisto Earring",
+        left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
         right_ring="Moonlight Ring",
         back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
     }
@@ -550,21 +557,22 @@ function init_gear_sets()
     }
 
 	sets.defense.Meva =  {
+        main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','Weapon skill damage +10%',}},
         sub="Refined Grip +1",
         ammo="Staunch Tathlum",
         head="Nyame Helm",
-        body="Nyame Mail",
-        hands="Nyame Gauntlets",
+        body="Erilaz Surcoat +2",
+        hands={ name="Nyame Gauntlets", augments={'Path: B',}},
         legs="Eri. Leg Guards +2",
-        feet="Nyame Sollerets",
-        neck="Warder's Charm +1",
+        feet="Erilaz Greaves +2",
+        neck={ name="Warder's Charm +1", augments={'Path: A',}},
         waist="Plat. Mog. Belt",
-    left_ear="Odnowa Earring +1",
-    right_ear="Etiolation Earring",
-    left_ring="Defending Ring",
-    right_ring="Moonlight Ring",
-    back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
-}
+        left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+        right_ear={ name="Erilaz Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+7','Mag. Acc.+7',}},
+        left_ring="Gurebu's Ring",
+        right_ring="Moonlight Ring",
+        back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
+    }
 
 	sets.Kiting = {
         legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
@@ -579,20 +587,19 @@ function init_gear_sets()
 	--------------------------------------
 
     sets.engaged = {
-        sub="Refined Grip +1",
         ammo="Staunch Tathlum",
         head="Nyame Helm",
-        body="Nyame Mail",
+        body="Erilaz Surcoat +2",
         hands="Turms Mittens +1",
         legs="Eri. Leg Guards +2",
-        feet="Nyame Sollerets",
-        neck="Warder's Charm +1",
+        feet="Turms Leggings +1",
+        neck={ name="Warder's Charm +1", augments={'Path: A',}},
         waist="Plat. Mog. Belt",
-        left_ear="Etiolation Earring",
-        right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-        left_ring="Moonlight Ring",
-        right_ring="Defending Ring",
-        back="Ogma's Cape",
+        left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+        right_ear="Tuisto Earring",
+        left_ring="Defending Ring",
+        right_ring="Moonlight Ring",
+        back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
     }
     
 	sets.engaged.AM3 = {        

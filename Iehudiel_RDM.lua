@@ -680,7 +680,9 @@ function init_gear_sets()
         back={ name="Sucellos's Cape", augments={'INT+12','Mag. Acc+5 /Mag. Dmg.+5','Magic Damage +2','"Fast Cast"+10','Spell interruption rate down-6%',}},
     }
 
-    sets.midcast.MndEnfeeblesAcc = set_combine(sets.midcast.MndEnfeebles, {})
+    sets.midcast.MndEnfeeblesAcc = set_combine(sets.midcast.MndEnfeebles, {
+        body="Atrophy Tabard +3",
+    })
 
     sets.midcast.MndEnfeeblesEffect = set_combine(sets.midcast.MndEnfeebles, {
         ammo="Regal Gem",
@@ -713,16 +715,19 @@ function init_gear_sets()
     sets.midcast.SkillEnfeebles = set_combine(sets.midcast.MndEnfeebles, {
         main="Contemplator +1",
         sub="Mephitis Grip",
-        head="Viti. Chapeau +3",
+        ammo="Regal Gem",
+        head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
         body="Atrophy Tabard +3",
         hands="Leth. Ganth. +3",
-        feet="Vitiation Boots +3",
-        neck="Incanter's Torque",
-        ring1="Stikini Ring +1",
-        ring2="Stikini Ring +1",
-        ear1="Vor Earring",
-        ear2="Snotra Earring",
+        legs={ name="Chironic Hose", augments={'Mag. Acc.+20','Pet: Mag. Acc.+22','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+        feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
+        neck={ name="Dls. Torque +2", augments={'Path: A',}},
         waist="Rumination Sash",
+        left_ear="Snotra Earring",
+        right_ear={ name="Leth. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Dbl.Atk."+3',}},
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring +1",
+        back={ name="Sucellos's Cape", augments={'INT+12','Mag. Acc+5 /Mag. Dmg.+5','Magic Damage +2','"Fast Cast"+10','Spell interruption rate down-6%',}},
         })
 
     sets.midcast.Sleep = set_combine(sets.midcast.IntEnfeeblesAcc, {
@@ -971,7 +976,7 @@ function init_gear_sets()
     -- No Magic Haste (74% DW to cap)
     sets.engaged.DW = {
         ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head="Aya. Zucchetto +2",
+		head="Bunzi's Hat",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Jhakri Slops +2",
