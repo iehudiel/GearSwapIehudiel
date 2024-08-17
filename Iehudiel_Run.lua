@@ -100,7 +100,7 @@ function init_gear_sets()
         back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
     }
     sets.precast.JA['Swipe'] = sets.precast.JA['Lunge']
-    sets.precast.JA['Gambit'] = { hands="Runeist Mitons +1"}
+    sets.precast.JA['Gambit'] = {hands="Runeist Mitons +2"}
     sets.precast.JA['Rayke'] = {feet="Futhark Bottes"}
     sets.precast.JA['Elemental Sforzo'] = set_combine(sets.enmity, {body="Futhark Coat +3"})
     sets.precast.JA['Swordplay'] = set_combine(sets.enmity, {hands="Futhark Mitons"})
@@ -146,7 +146,7 @@ function init_gear_sets()
     sets.precast.FC = {
         sub="Refined Grip +1",
         ammo="Staunch Tathlum",
-        head="Rune. Bandeau +1",
+        head="Rune. Bandeau +2",
         body="Erilaz Surcoat +2",
         hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
         legs={ name="Futhark Trousers +1", augments={'Enhances "Inspire" effect',}},
@@ -160,7 +160,7 @@ function init_gear_sets()
         back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
     }
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {legs="Futhark Trousers +1",head="Erilaz Galea +2",
-    body="Emet Harness +1",})
+    })
     sets.precast.FC['Utsusemi: Ichi'] = set_combine(sets.precast.FC, {neck='Magoraga beads', back="Mujin Mantle"})
     sets.precast.FC['Utsusemi: Ni'] = set_combine(sets.precast.FC['Utsusemi: Ichi'], {})
 
@@ -319,7 +319,7 @@ function init_gear_sets()
         ammo="Staunch Tathlum",
         head={ name="Carmine Mask", augments={'Accuracy+15','Mag. Acc.+10','"Fast Cast"+3',}},
         body="Erilaz Surcoat +2",
-        hands="Runeist Mitons +1",
+        hands="Runeist Mitons +2",
         legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
         feet="Nyame Sollerets",
         neck="Enhancing Torque",
@@ -349,7 +349,7 @@ function init_gear_sets()
 
     sets.midcast['Regen'] = {
         ammo="Staunch Tathlum",
-        head="Rune. Bandeau +1",
+        head="Rune. Bandeau +2",
         body="Runeist Coat +1",
         hands="Turms Mittens +1",
         legs={ name="Futhark Trousers +1", augments={'Enhances "Inspire" effect',}},
@@ -469,19 +469,17 @@ function init_gear_sets()
 	--------------------------------------
 
     sets.idle = {
-        main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','Weapon skill damage +10%',}},
-        sub="Refined Grip +1",
         ammo="Staunch Tathlum",
         head="Erilaz Galea +2",
-        body="Erilaz Surcoat +2",
-        hands="Turms Mittens +1",
+        body="Adamantite Armor",
+        hands="Erilaz Gauntlets +2",
         legs="Eri. Leg Guards +2",
-        feet="Turms Leggings +1",
+        feet="Erilaz Greaves +2",
         neck={ name="Warder's Charm +1", augments={'Path: A',}},
         waist="Plat. Mog. Belt",
         left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
         right_ear="Tuisto Earring",
-        left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+        left_ring="Gurebu's Ring",
         right_ring="Moonlight Ring",
         back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Parrying rate+5%',}},
     }
@@ -510,7 +508,7 @@ function init_gear_sets()
         ammo="Staunch Tathlum",
         head="Erilaz Galea +2",
         body="Erilaz Surcoat +2",
-        hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+        hands="Erilaz Gauntlets +2",
         legs="Eri. Leg Guards +2",
         feet="Erilaz Greaves +2",
         neck={ name="Warder's Charm +1", augments={'Path: A',}},
@@ -588,8 +586,8 @@ function init_gear_sets()
 
     sets.engaged = {
         ammo="Staunch Tathlum",
-        head="Nyame Helm",
-        body="Erilaz Surcoat +2",
+        head="Erilaz Galea +2",
+        body="Adamantite Armor",
         hands="Turms Mittens +1",
         legs="Eri. Leg Guards +2",
         feet="Turms Leggings +1",
