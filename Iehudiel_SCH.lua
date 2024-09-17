@@ -196,20 +196,20 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {
 		main="Mpaca's Staff",
-		sub="Enki Strap",
-		ammo="Staunch Tathlum",
-		head={ name="Merlinic Hood", augments={'"Mag.Atk.Bns."+29','STR+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
-		body="Agwu's Robe",
-		hands="Agwu's Gages",
-		legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
-		feet="Regal Pumps +1",
-		neck={ name="Loricate Torque +1", augments={'Path: A',}},
-		waist="Witful Belt",
-		left_ear="Etiolation Earring",
-		right_ear="Malignance Earring",
-		left_ring="Kishar Ring",
-		right_ring="Rahab Ring",
-		back="Lugh's Cape",
+        sub="Enki Strap",
+        ammo="Staunch Tathlum",
+        head={ name="Merlinic Hood", augments={'"Mag.Atk.Bns."+29','STR+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
+        body="Agwu's Robe",
+        hands="Agwu's Gages",
+        legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+        feet="Regal Pumps +1",
+        neck={ name="Loricate Torque +1", augments={'Path: A',}},
+        waist="Witful Belt",
+        left_ear="Loquac. Earring",
+        right_ear="Malignance Earring",
+        left_ring="Kishar Ring",
+        right_ring="Rahab Ring",
+        back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 	}
 
     sets.precast.FC.Grimoire = {
@@ -515,20 +515,20 @@ function init_gear_sets()
     -- Custom spell classes
     sets.midcast.Enfeebles =  {
 		main="Daybreak",
-		sub="Culminus",
-		ammo="Pemphredo Tathlum",
-		head="Befouled Crown",
-		body="Jhakri Robe +2",
-		hands={ name="Kaykaus Cuffs", augments={'MP+60','Spell interruption rate down +10%','"Cure" spellcasting time -5%',}},
-		legs={ name="Chironic Hose", augments={'Mag. Acc.+20','Pet: Mag. Acc.+22','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-		feet="Jhakri Pigaches +2",
-		neck="Imbodla Necklace",
-		waist="Rumination Sash",
-		left_ear="Regal Earring",
-		right_ear="Malignance Earring",
-		left_ring="Stikini Ring +1",
-		right_ring="Stikini Ring +1",
-		back="Lugh's Cape",
+        sub="Culminus",
+        ammo="Pemphredo Tathlum",
+        head="Befouled Crown",
+        body="Jhakri Robe +2",
+        hands={ name="Kaykaus Cuffs", augments={'MP+60','Spell interruption rate down +10%','"Cure" spellcasting time -5%',}},
+        legs="Arbatel Pants +2",
+        feet="Jhakri Pigaches +2",
+        neck="Imbodla Necklace",
+        waist="Rumination Sash",
+        left_ear="Regal Earring",
+        right_ear="Malignance Earring",
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring +1",
+        back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Magic Damage +10','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}},
 	}
 
     sets.midcast.MndEnfeebles = set_combine(sets.midcast.Enfeebles, {
@@ -540,7 +540,7 @@ function init_gear_sets()
         --head="Acad. Mortar. +3",
         --body="Acad. Gown +2",
         --hands="Kaykaus Cuffs +1",
-        --legs="arbatel pants +3",
+        legs="Arbatel pants +2",
         --feet="Acad. Loafers +2",
         --neck="Argute Stole +1",
         ear1="Malignance Earring",
@@ -677,21 +677,21 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 
     sets.idle.Normal = {
-		main="Mpaca's Staff",
-		sub="Enki Strap",
-		ammo="Staunch Tathlum",
-		head="Befouled Crown",
-		body="Arbatel Gown +2",
-		hands={ name="Chironic Gloves", augments={'STR+12','Accuracy+8','"Refresh"+1',}},
-		legs="Assid. Pants +1",
-		feet="Nyame Sollerets",
-		neck="Sibyl Scarf",
-		waist="Rumination Sash",
-		left_ear="Etiolation Earring",
-		right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','Latent effect: "Refresh"+1',}},
-		left_ring="Stikini Ring +1",
-		right_ring="Stikini Ring +1",
-		back="Solemnity Cape",
+        main="Mpaca's Staff",
+        sub="Enki Strap",
+        ammo="Staunch Tathlum",
+        head="Befouled Crown",
+        body="Arbatel Gown +2",
+        hands={ name="Chironic Gloves", augments={'STR+12','Accuracy+8','"Refresh"+1',}},
+        legs="Assid. Pants +1",
+        feet="Nyame Sollerets",
+        neck="Sibyl Scarf",
+        waist="Rumination Sash",
+        left_ear="Etiolation Earring",
+        right_ear="Ethereal Earring",
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring +1",
+        back="Solemnity Cape",
 	}
 
     sets.idle.DT = set_combine(sets.idle.Normal, {
@@ -779,8 +779,8 @@ function init_gear_sets()
     sets.buff['Rapture'] = {head="Arbatel Bonnet +2",}
     sets.buff['Perpetuance'] = {hands="Arbatel Bracers +2",}
     sets.buff['Immanence'] = { hands="Arbatel Bracers +2", "Lugh's Cape"}
-    sets.buff['Penury'] = {legs="Arbatel Pants +1",}
-    sets.buff['Parsimony'] = {legs="Arbatel Pants +1",}
+    sets.buff['Penury'] = {legs="Arbatel Pants +2",}
+    sets.buff['Parsimony'] = {legs="Arbatel Pants +2",}
     sets.buff['Celerity'] = {feet="Peda. Loafers +3"}
     sets.buff['Alacrity'] = {feet="Peda. Loafers +3"}
     sets.buff['Klimaform'] = {feet="Arbatel Loafers +3"}

@@ -188,7 +188,7 @@ function get_sets()
       head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
       body="Malignance Tabard",
       hands="Malignance Gloves",
-      legs={ name="Samnuha Tights", augments={'STR+7','"Dbl.Atk."+2','"Triple Atk."+1',}},
+      legs="Malignance Tights",
       feet="Nyame Sollerets",
       neck="Clotharius Torque",
       waist="Kentarch Belt",
@@ -206,7 +206,7 @@ function get_sets()
       head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
       body="Malignance Tabard",
       hands="Malignance Gloves",
-      legs={ name="Samnuha Tights", augments={'STR+7','"Dbl.Atk."+2','"Triple Atk."+1',}},
+      legs="Malignance Tights",
       feet="Nyame Sollerets",
       neck="Clotharius Torque",
       waist="Kentarch Belt",
@@ -225,7 +225,7 @@ function get_sets()
       head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
       body="Malignance Tabard",
       hands="Malignance Gloves",
-      legs={ name="Nyame Flanchard", augments={'Path: B',}},
+      legs="Malignance Tights",
       feet="Nyame Sollerets",
       neck={ name="Loricate Torque +1", augments={'Path: A',}},
       waist="Kentarch Belt",
@@ -255,14 +255,14 @@ function get_sets()
 									
 									  
 		sets.SavageBlade = {
-      head={ name="Herculean Helm", augments={'"Fast Cast"+2','Attack+12','Weapon skill damage +6%',}},
+      head={ name="Nyame Helm", augments={'Path: B',}},
       body={ name="Nyame Mail", augments={'Path: B',}},
-      hands="Meg. Gloves +2",
-      legs="Nyame Flanchard",
-      feet={ name="Herculean Boots", augments={'Accuracy+29','Weapon skill damage +4%','CHR+9','Attack+5',}},
-      neck="Clotharius Torque",
-      waist="Eschan Stone",
-      left_ear="Telos Earring",
+      hands="Chasseur's Gants +2",
+      legs={ name="Nyame Flanchard", augments={'Path: B',}},
+      feet={ name="Nyame Sollerets", augments={'Path: B',}},
+      neck="Rep. Plat. Medal",
+      waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+      left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
       right_ear="Ishvara Earring",
       left_ring="Epaminondas's Ring",
       right_ring="Regal Ring",
@@ -274,15 +274,15 @@ function get_sets()
 		--Ranged TP Sets--
 		sets.RangedTP = {
       head="Ikenga's Hat",
-      body="Laksa. Frac +2",
+      body="Ikenga's Vest",
       hands="Ikenga's Gloves",
-      legs="Ikenga's Trousers",
-      feet="Meg. Jam. +2",
+      legs="Chas. Culottes +2",
+      feet="Ikenga's Clogs",
       neck="Iskur Gorget",
-      waist="Kentarch Belt",
-      left_ear="Telos Earring",
-      right_ear="Crep. Earring",
-      left_ring="Dingir Ring",
+      waist="Eschan Stone",
+      left_ear="Crep. Earring",
+      right_ear="Telos Earring",
+      left_ring="Ilabrat Ring",
       right_ring="Crepuscular Ring",
       back={ name="Camulus's Mantle", augments={'AGI+16','Rng.Acc.+20 Rng.Atk.+20','Rng.Atk.+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
@@ -291,7 +291,20 @@ function get_sets()
 		
 		RangedTP_ind = 1
 		
-		sets.RangedTP.Accuracy = {}
+		sets.RangedTP.Accuracy = {
+      head="Ikenga's Hat",
+      body="Ikenga's Vest",
+      hands="Ikenga's Gloves",
+      legs="Chas. Culottes +2",
+      feet="Ikenga's Clogs",
+      neck="Iskur Gorget",
+      waist="Eschan Stone",
+      left_ear="Crep. Earring",
+      right_ear="Telos Earring",
+      left_ring="Ilabrat Ring",
+      right_ring="Crepuscular Ring",
+      back={ name="Camulus's Mantle", augments={'AGI+16','Rng.Acc.+20 Rng.Atk.+20','Rng.Atk.+10','Weapon skill damage +10%','Damage taken-5%',}},
+    }
 								
 									  
 									  
@@ -312,15 +325,15 @@ function get_sets()
 									  
 		--Ranged WS Sets--
 		sets.LastStand = {
-      head={ name="Herculean Helm", augments={'"Fast Cast"+2','Attack+12','Weapon skill damage +6%',}},
+      head="Ikenga's Hat",
       body="Laksa. Frac +2",
-      hands="Meg. Gloves +2",
-      legs="Ikenga's Trousers",
+      hands="Chasseur's Gants +2",
+      legs={ name="Nyame Flanchard", augments={'Path: B',}},
       feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
       neck="Iskur Gorget",
       waist="Eschan Stone",
-      left_ear="Telos Earring",
-      right_ear="Enervating Earring",
+      left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+      right_ear="Ishvara Earring",
       left_ring="Epaminondas's Ring",
       right_ring="Dingir Ring",
       back={ name="Camulus's Mantle", augments={'AGI+16','Rng.Acc.+20 Rng.Atk.+20','Rng.Atk.+10','Weapon skill damage +10%','Damage taken-5%',}},
@@ -476,7 +489,7 @@ function get_sets()
     ammo="Chrono Bullet",
     head={ name="Lanun Tricorne +1", augments={'Enhances "Winning Streak" effect',}},
     body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
-    hands="Chasseur's Gants +1",
+    hands="Chasseur's Gants +2",
     legs={ name="Lanun Trews +1", augments={'Enhances "Snake Eye" effect',}},
     feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
     neck="Regal Necklace",
@@ -503,7 +516,7 @@ function get_sets()
       range={ name="Compensator", augments={'DMG:+15','Rng.Atk.+15','"Mag.Atk.Bns."+15',}},
       head={ name="Lanun Tricorne +1", augments={'Enhances "Winning Streak" effect',}},
       body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
-      hands="Chasseur's Gants +1",
+      hands="Chasseur's Gants +2",
       legs="Nyame Flanchard",
       feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
       neck="Regal Necklace",
@@ -523,36 +536,37 @@ function get_sets()
 		sets.JA.BlitzerRoll = set_combine(sets.JA.PhantomRoll, {})
 							   
 							   
-		sets.QuickDraw = {ammo="Living Bullet",
-    head={ name="Herculean Helm", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Mag. Acc.+12','"Mag.Atk.Bns."+10',}},
-    body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
-    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
-    legs={ name="Herculean Trousers", augments={'AGI+14','Pet: "Subtle Blow"+1','Weapon skill damage +6%','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
-    neck={ name="Comm. Charm +2", augments={'Path: A',}},
-    waist="Eschan Stone",
-    left_ear="Hecate's Earring",
-    right_ear="Friomisi Earring",
-    left_ring="Dingir Ring",
-    right_ring="Arvina Ringlet +1",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},}
+		sets.QuickDraw = {
+      head="Ikenga's Hat",
+      body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+      hands="Chasseur's Gants +2",
+      legs={ name="Nyame Flanchard", augments={'Path: B',}},
+      feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
+      neck="Sibyl Scarf",
+      waist="Eschan Stone",
+      left_ear="Hecate's Earring",
+      right_ear="Friomisi Earring",
+      left_ring="Dingir Ring",
+      right_ring="Locus Ring",
+      back={ name="Camulus's Mantle", augments={'AGI+16','Rng.Acc.+20 Rng.Atk.+20','Rng.Atk.+10','Weapon skill damage +10%','Damage taken-5%',}},
+  }
 	
 		sets.QuickDraw.index = {'MagicAttack', 'MagicAccuracy'}
 		
 		QuickDraw_ind = 1
 		
 		sets.QuickDraw.MagicAttack = {
-      head="Nyame Helm",
-      body={ name="Samnuha Coat", augments={'Mag. Acc.+8','"Mag.Atk.Bns."+11','"Dual Wield"+2',}},
-      hands="Malignance Gloves",
-      legs="Nyame Flanchard",
+      head="Ikenga's Hat",
+      body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+      hands="Chasseur's Gants +2",
+      legs={ name="Nyame Flanchard", augments={'Path: B',}},
       feet="Chass. Bottes +2",
-      neck="Deviant Necklace",
+      neck="Sibyl Scarf",
       waist="Eschan Stone",
       left_ear="Hecate's Earring",
       right_ear="Friomisi Earring",
-      left_ring="Crepuscular Ring",
-      right_ring="Dingir Ring",
+      left_ring="Dingir Ring",
+      right_ring="Crepuscular Ring",
       back={ name="Camulus's Mantle", augments={'AGI+16','Rng.Acc.+20 Rng.Atk.+20','Rng.Atk.+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
 									  
@@ -613,7 +627,20 @@ function get_sets()
 							  
     sets.Utility.Cure = {}
                 
-    sets.Utility.Snapshot =  {}
+    sets.Utility.Snapshot =  {
+      head="Ikenga's Hat",
+      body="Ikenga's Vest",
+      hands="Ikenga's Gloves",
+      legs="Chas. Culottes +2",
+      feet="Ikenga's Clogs",
+      neck="Iskur Gorget",
+      waist="Eschan Stone",
+      left_ear="Crep. Earring",
+      right_ear="Telos Earring",
+      left_ring="Ilabrat Ring",
+      right_ring="Crepuscular Ring",
+      back={ name="Camulus's Mantle", augments={'AGI+16','Rng.Acc.+20 Rng.Atk.+20','Rng.Atk.+10','Weapon skill damage +10%','Damage taken-5%',}},
+    }
 							 
 									 
 							 

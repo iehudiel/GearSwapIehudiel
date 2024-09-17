@@ -125,8 +125,8 @@ function get_sets()
 		waist="Moonbow Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Ishvara Earring",
-		left_ring="Niqmaddu Ring",
-		right_ring="Petrov Ring",
+		left_ring="Gere Ring",
+    	right_ring="Niqmaddu Ring",
 		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+10 Attack+10','STR+6','"Dbl.Atk."+10','System: 1 ID: 640 Val: 4',}},
 	}
 
@@ -142,8 +142,8 @@ function get_sets()
 		waist="Moonbow Belt +1",
 		left_ear="Sherida Earring",
 		right_ear={ name="Schere Earring", augments={'Path: A',}},
-		left_ring="Niqmaddu Ring",
-		right_ring="Mummu Ring",
+		left_ring="Gere Ring",
+    	right_ring="Niqmaddu Ring",
 		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+10 Attack+10','STR+6','"Dbl.Atk."+10','System: 1 ID: 640 Val: 4',}},
 	}
 
@@ -158,8 +158,8 @@ function get_sets()
 		waist="Moonbow Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Mache Earring +1",
-		left_ring="Niqmaddu Ring",
-		right_ring="Chirich Ring",
+		left_ring="Gere Ring",
+    	right_ring="Niqmaddu Ring",
 		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+10 Attack+10','STR+6','"Dbl.Atk."+10','System: 1 ID: 640 Val: 4',}},
 	}
 

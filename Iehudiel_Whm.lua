@@ -20,41 +20,57 @@ function get_sets()
 	Na_Spells = S{"Paralyna","Silena","Poisona","Blindna","Viruna","Stona","Erase"} -- For Yagrush --
 	sc_map = {SC1 = "LightArts", SC2 = "Celerity", SC3 = "Accession"} -- 3 Additional Binds. Can Change Whatever JA/WS/Spells You Like Here. Remember Not To Use Spaces. --
 
-	sets.Idle = {}
+	sets.Idle = {
+		main="Daybreak",
+		sub="Culminus",
+		ammo="Staunch Tathlum",
+		head="Bunzi's Hat",
+		body="Ebers Bliaut +2",
+		hands="Bunzi's Gloves",
+		legs="Ebers Pant. +2",
+		feet="Bunzi's Sabots",
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
+		waist="Plat. Mog. Belt",
+		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+		right_ear="Ethereal Earring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
+		back="Solemnity Cape",
+	}
 	-- Idle Sets --
 
 	sets.Idle.Refresh = {
-		main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
-		sub="Sors Shield",
+		main="Mpaca's Staff",
+		sub="Enki Strap",
 		ammo="Staunch Tathlum",
-		head="Befouled Crown",
+		head="Inyanga Tiara +2",
 		body="Ebers Bliaut +2",
-		hands={ name="Chironic Gloves", augments={'STR+12','Accuracy+8','"Refresh"+1',}},
+		hands="Inyan. Dastanas +2",
 		legs="Assid. Pants +1",
-		feet="Crier's Gaiters",
-		neck={ name="Loricate Torque +1", augments={'Path: A',}},
-		waist="Carrier's Sash",
-		left_ear="Ethereal Earring",
-		right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','Latent effect: "Refresh"+1',}},
-		left_ring="Defending Ring",
+		feet="Inyan. Crackows +2",
+		neck="Sibyl Scarf",
+		waist="Fucho-no-Obi",
+		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+		right_ear="Ethereal Earring",
+		left_ring="Stikini Ring +1",
 		right_ring="Stikini Ring +1",
 		back="Solemnity Cape",
 	}
 	sets.Idle.Movement = {
-		main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
+		main="Daybreak",
 		sub="Culminus",
 		ammo="Staunch Tathlum",
 		head="Bunzi's Hat",
-		body="Bunzi's Robe",
+		body="Ebers Bliaut +2",
 		hands="Bunzi's Gloves",
-		legs="Bunzi's Pants",
+		legs="Ebers Pant. +2",
 		feet="Crier's Gaiters",
-		neck={ name="Loricate Torque +1", augments={'Path: A',}},
-		waist="Fucho-no-Obi",
-		left_ear="Etiolation Earring",
-		right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','Latent effect: "Refresh"+1',}},
-		left_ring="Defending Ring",
-		right_ring="Vocane Ring",
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
+		waist="Plat. Mog. Belt",
+		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+		right_ear="Etiolation Earring",
+		left_ring="Gurebu's Ring",
+		right_ring="Defending Ring",
 		back="Solemnity Cape",
 	}
 	sets.Resting = {
@@ -101,21 +117,21 @@ function get_sets()
 	sets.Precast = {}
 	-- Fastcast Set --
 	sets.Precast.FastCast = {
-		main={name="Gada", augments={'"Fast Cast"+4','Mag. Acc.+22','"Mag.Atk.Bns."+19','DMG:+5',}},
+		main={ name="Gada", augments={'"Fast Cast"+4','Mag. Acc.+22','"Mag.Atk.Bns."+19','DMG:+5',}},
 		sub="Culminus",
 		ammo="Staunch Tathlum",
-		head="Bunzi's Hat",
+		head="Ebers Cap +2",
 		body="Inyanga Jubbah +2",
 		hands={ name="Kaykaus Cuffs", augments={'MP+60','Spell interruption rate down +10%','"Cure" spellcasting time -5%',}},
-		legs="Bunzi's Pants",
+		legs={ name="Lengo Pants", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Refresh"+1',}},
 		feet="Regal Pumps +1",
 		neck="Nodens Gorget",
-		waist="Rumination Sash",
-		left_ear="Halasz Earring",
+		waist="Witful Belt",
+		left_ear="Malignance Earring",
 		right_ear="Etiolation Earring",
 		left_ring="Kishar Ring",
 		right_ring="Lebeche Ring",
-		back="Solemnity Cape",
+		back="Perimede Cape",
 	}
 
 	-- Elemental Staves --
@@ -126,9 +142,9 @@ function get_sets()
 	sets.Precast['Enhancing Magic'] = set_combine(sets.Precast.FastCast,
 		{waist="Siegel Sash"}
 	)
-	sets.Precast['Healing Magic'] = set_combine(sets.Precast.FastCast,
+	sets.Precast['Healing Magic'] = {set_combine(sets.Precast.FastCast,
 		{legs="Ebers Pant. +2"}
-	)
+	)}
 
 	-- Cure Precast Set --
 	sets.Precast.Cure = sets.Precast['Healing Magic']
@@ -155,31 +171,31 @@ function get_sets()
 	-- Haste Set --
 	sets.Midcast.Haste = { main={ name="Gada", augments={'Enh. Mag. eff. dur. +6','Mag. Acc.+8','"Mag.Atk.Bns."+19','DMG:+1',}},
 		sub="Ammurapi Shield",
-    ammo="Incantor Stone",
-    head={ name="Telchine Cap", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-    body={ name="Telchine Chas.", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-    hands={ name="Telchine Gloves", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-    legs={ name="Telchine Braconi", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-    feet={ name="Telchine Pigaches", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-	waist="Embla Sash",
+		ammo="Incantor Stone",
+		head={ name="Telchine Cap", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		body={ name="Telchine Chas.", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		hands={ name="Telchine Gloves", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		legs={ name="Telchine Braconi", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		feet={ name="Telchine Pigaches", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		waist="Embla Sash",
 	}
 	
 	-- Cure Set --
 	sets.Midcast.Cure = {
 		main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
 		sub="Sors Shield",
-		ammo="Staunch Tathlum",
-		head="Ebers Cap +2",
+		ammo="Pemphredo Tathlum",
+		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
 		body="Ebers Bliaut +2",
-		hands={ name="Kaykaus Cuffs", augments={'MP+60','Spell interruption rate down +10%','"Cure" spellcasting time -5%',}},
+		hands="Theophany Mitts +2",
 		legs="Ebers Pant. +2",
-		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
 		neck="Nodens Gorget",
 		waist="Rumination Sash",
 		left_ear={ name="Nourish. Earring +1", augments={'Path: A',}},
 		right_ear="Mendi. Earring",
-		left_ring="Sirona's Ring",
-		right_ring="Lebeche Ring",
+		left_ring="Naji's Loop",
+		right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
 		back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+10 /Mag. Dmg.+10','MND+10','"Cure" potency +10%','Spell interruption rate down-10%',}},
 	}
 
@@ -190,18 +206,18 @@ function get_sets()
 	sets.Midcast.Curaga =  {
 		main={ name="Queller Rod", augments={'Healing magic skill +15','"Cure" potency +10%','"Cure" spellcasting time -7%',}},
 		sub="Sors Shield",
-		ammo="Staunch Tathlum",
-		head="Ebers Cap +2",
+		ammo="Pemphredo Tathlum",
+		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
 		body="Theo. Bliaut +3",
-		hands={ name="Kaykaus Cuffs", augments={'MP+60','Spell interruption rate down +10%','"Cure" spellcasting time -5%',}},
+		hands="Theophany Mitts +2",
 		legs="Ebers Pant. +2",
-		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
 		neck="Nodens Gorget",
 		waist="Rumination Sash",
 		left_ear={ name="Nourish. Earring +1", augments={'Path: A',}},
 		right_ear="Mendi. Earring",
-		left_ring="Sirona's Ring",
-		right_ring="Lebeche Ring",
+		left_ring="Naji's Loop",
+		right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
 		back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+10 /Mag. Dmg.+10','MND+10','"Cure" potency +10%','Spell interruption rate down-10%',}},
 	}
 
@@ -209,76 +225,88 @@ function get_sets()
 	sets.Midcast.Curaga.Enmity = set_combine(sets.Midcast.Curaga,{})
 
 	sets.Midcast['Enhancing Magic'] = {
-		main="Beneficus",
+		main={ name="Gada", augments={'"Fast Cast"+4','Mag. Acc.+22','"Mag.Atk.Bns."+19','DMG:+5',}},
 		sub="Culminus",
-		ammo="Staunch Tathlum",
+		ammo="Pemphredo Tathlum",
 		head="Befouled Crown",
 		body={ name="Telchine Chas.", augments={'Mag. Acc.+11 "Mag.Atk.Bns."+11','"Cure" spellcasting time -5%','Enh. Mag. eff. dur. +9',}},
 		hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +9',}},
 		legs={ name="Telchine Braconi", augments={'Mag. Acc.+22','"Cure" spellcasting time -3%','Enh. Mag. eff. dur. +9',}},
 		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
 		neck="Enhancing Torque",
-		waist="Cascade Belt",
+		waist="Embla Sash",
 		left_ear="Halasz Earring",
 		right_ear="Etiolation Earring",
-		left_ring="Kishar Ring",
-		right_ring="Lebeche Ring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
 		back="Perimede Cape",
 	}
 
 	-- Barspells Set --
 	sets.Midcast.Bar = {
 		main="Beneficus",
-		sub="Culminus",
-		ammo="Staunch Tathlum",
+		sub="Thuellaic Ecu +1",
+		ammo="Pemphredo Tathlum",
 		head="Ebers Cap +2",
-		body={ name="Telchine Chas.", augments={'Mag. Acc.+11 "Mag.Atk.Bns."+11','"Cure" spellcasting time -5%','Enh. Mag. eff. dur. +9',}},
-		hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +9',}},
+		body="Ebers Bliaut +2",
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
 		legs={ name="Telchine Braconi", augments={'Mag. Acc.+22','"Cure" spellcasting time -3%','Enh. Mag. eff. dur. +9',}},
 		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
 		neck="Enhancing Torque",
-		waist="Cascade Belt",
-		left_ear="Halasz Earring",
+		waist="Embla Sash",
+		left_ear="Mendi. Earring",
 		right_ear="Etiolation Earring",
-		left_ring="Kishar Ring",
-		right_ring="Lebeche Ring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
 		back="Perimede Cape",
 	}
 
 	-- Regen Set --
-	sets.Midcast.Regen = sets.Midcast['Enhancing Magic']
+	sets.Midcast.Regen = {
+		main="Bolelabunga",
+		sub="Thuellaic Ecu +1",
+		ammo="Pemphredo Tathlum",
+		head="Inyanga Tiara +2",
+		body={ name="Telchine Chas.", augments={'Mag. Acc.+11 "Mag.Atk.Bns."+11','"Cure" spellcasting time -5%','Enh. Mag. eff. dur. +9',}},
+		hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +9',}},
+		legs={ name="Telchine Braconi", augments={'Mag. Acc.+22','"Cure" spellcasting time -3%','Enh. Mag. eff. dur. +9',}},
+		feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}},
+		neck="Enhancing Torque",
+		waist="Embla Sash",
+		left_ear="Etiolation Earring",
+		right_ear="Mendi. Earring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
+		back="Perimede Cape",
+	}
 
 	-- Stoneskin Set --
-	sets.Midcast.Stoneskin = set_combine(sets.Midcast.Haste,{
+	sets.Midcast.Stoneskin = {set_combine(sets.Midcast.Haste,{
 		waist="Carrier's Sash",
 		neck="Nodens Gorget"}
-	)
+	)}
 
 	-- Na Set --
 	sets.Midcast.Na = {
 		main={ name="Gada", augments={'"Fast Cast"+4','Mag. Acc.+22','"Mag.Atk.Bns."+19','DMG:+5',}},
-		head="Ebers Cap +2",
-		body="Inyanga Jubbah +2",
-		hands={ name="Fanatic Gloves", augments={'MP+30','Healing magic skill +5','"Conserve MP"+4',}},
-		ring1="Kishar Ring",
+		head="Ebers Cap +2",		
 		legs="Ebers Pant. +2",
-		feet="Regal Pumps +1"
 	}
 
 	-- Cursna Set --
 	sets.Midcast.Cursna = {
 		main={ name="Gada", augments={'"Fast Cast"+4','Mag. Acc.+22','"Mag.Atk.Bns."+19','DMG:+5',}},
-		sub="Sors Shield",
-		ammo="Staunch Tathlum",
-		head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
-		body="Theo. Bliaut +3",
+		sub="Thuellaic Ecu +1",
+		ammo="Pemphredo Tathlum",
+		head="Ebers Cap +2",
+		body="Ebers Bliaut +2",
 		hands={ name="Fanatic Gloves", augments={'MP+30','Healing magic skill +5','"Conserve MP"+4',}},
 		legs="Ebers Pant. +2",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Malison Medallion",
 		waist="Rumination Sash",
 		left_ear={ name="Nourish. Earring +1", augments={'Path: A',}},
-		right_ear="Halasz Earring",
+		right_ear={ name="Ebers Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+7','Mag. Acc.+7',}},
 		left_ring="Ephedra Ring",
 		right_ring="Ephedra Ring",
 		back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+10 /Mag. Dmg.+10','MND+10','"Cure" potency +10%','Spell interruption rate down-10%',}},
@@ -301,10 +329,23 @@ function get_sets()
 		legs="Chironic Hose",
 	}
 
-	sets.Midcast['Enfeebling Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-	head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-	body="Theophany Briault +2",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Stikini Ring +1",
-	back="Aurist's Cape +1",waist="Luminary Sash",legs="Chironic Hose",feet="Uk'uxkaj Boots"}
+	sets.Midcast['Enfeebling Magic'] = {
+		main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+		sub="Thuellaic Ecu +1",
+		ammo="Pemphredo Tathlum",
+		head="Befouled Crown",
+		body="Theo. Bliaut +3",
+		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+20','Pet: Mag. Acc.+22','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
+		neck="Imbodla Necklace",
+		waist="Eschan Stone",
+		left_ear="Regal Earring",
+		right_ear="Digni. Earring",
+		left_ring="Stikini Ring +1",
+		right_ring="Stikini Ring +1",
+		back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+10 /Mag. Dmg.+10','MND+10','"Cure" potency +10%','Spell interruption rate down-10%',}},
+	}
 
 	sets.Midcast['Dark Magic'] = set_combine(sets.Midcast['Enfeebling Magic'],{
 			Neck="erra pendant"})
@@ -695,17 +736,17 @@ end
 function select_default_macro_book()
 	-- Default macro set/book
 	if player.sub_job == 'SCH' then
-		set_macro_page(3, 18)
+		set_macro_page(1, 12)
 	elseif player.sub_job == 'BLM' then
-		set_macro_page(1, 18)
+		set_macro_page(1, 12)
 	elseif player.sub_job == 'RDM' then
-		set_macro_page(2, 18)
+		set_macro_page(1, 12)
 	elseif player.sub_job == 'DNC' then
-		set_macro_page(10, 18)
+		set_macro_page(1, 12)
 	elseif player.sub_job == 'NIN' then
-		set_macro_page(5, 18)
+		set_macro_page(1, 12)
 	else
-		set_macro_page(1, 18)
+		set_macro_page(1, 12)
 	end
 end
 organizer_items = {
