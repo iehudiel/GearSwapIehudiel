@@ -224,7 +224,7 @@ function init_gear_sets()
 		waist="Plat. Mog. Belt",
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
 		right_ear={ name="Chev. Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+10','Mag. Acc.+10',}},
-		left_ring="Moonlight Ring",
+		left_ring="Gurebu's Ring",
 		right_ring="Defending Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','VIT+10','Enmity+10','Damage taken-5%',}},
 	}

@@ -339,19 +339,19 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 
     sets.precast.WS = {
-        ammo="Ginsen",
-		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands="Jhakri Cuffs +2",
-		legs="Jhakri Slops +2",
-		feet="Leth. Houseaux +3",
-		neck="Anu Torque",
-		waist="Sarissapho. Belt",
-		left_ear="Sherida Earring",
-		right_ear="Ishvara Earring",
-		left_ring="Epaminondas's Ring",
-		right_ring="Ilabrat Ring",
-		back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%','Damage taken-5%',}},
+        ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+        head={ name="Nyame Helm", augments={'Path: B',}},
+        body={ name="Nyame Mail", augments={'Path: B',}},
+        hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+        legs={ name="Nyame Flanchard", augments={'Path: B',}},
+        feet="Leth. Houseaux +3",
+        neck="Rep. Plat. Medal",
+        waist="Sarissapho. Belt",
+        left_ear="Sherida Earring",
+        right_ear="Ishvara Earring",
+        left_ring="Epaminondas's Ring",
+        right_ring="Karieyh Ring",
+        back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%','Damage taken-5%',}},
     }
 
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {
@@ -858,7 +858,7 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 
     sets.idle = {
-        main={ name="Crocea Mors", augments={'Path: C',}},
+        main="Excalibur",
 		sub="Culminus",
 		ammo="Pemphredo Tathlum",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
@@ -876,7 +876,7 @@ function init_gear_sets()
     }
 
     sets.idle.DT = set_combine(sets.idle, {
-        main={ name="Crocea Mors", augments={'Path: C',}},
+        main="Excalibur",
         sub="Culminus",
         ammo="Staunch Tathlum",
         head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},

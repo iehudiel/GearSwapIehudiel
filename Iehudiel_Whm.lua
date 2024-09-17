@@ -171,13 +171,13 @@ function get_sets()
 	-- Haste Set --
 	sets.Midcast.Haste = { main={ name="Gada", augments={'Enh. Mag. eff. dur. +6','Mag. Acc.+8','"Mag.Atk.Bns."+19','DMG:+1',}},
 		sub="Ammurapi Shield",
-    ammo="Incantor Stone",
-    head={ name="Telchine Cap", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-    body={ name="Telchine Chas.", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-    hands={ name="Telchine Gloves", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-    legs={ name="Telchine Braconi", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-    feet={ name="Telchine Pigaches", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
-	waist="Embla Sash",
+		ammo="Incantor Stone",
+		head={ name="Telchine Cap", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		body={ name="Telchine Chas.", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		hands={ name="Telchine Gloves", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		legs={ name="Telchine Braconi", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		feet={ name="Telchine Pigaches", augments={'"Fast Cast"+5','Enh. Mag. eff. dur. +10',}},
+		waist="Embla Sash",
 	}
 	
 	-- Cure Set --
@@ -736,17 +736,17 @@ end
 function select_default_macro_book()
 	-- Default macro set/book
 	if player.sub_job == 'SCH' then
-		set_macro_page(3, 18)
+		set_macro_page(1, 12)
 	elseif player.sub_job == 'BLM' then
-		set_macro_page(1, 18)
+		set_macro_page(1, 12)
 	elseif player.sub_job == 'RDM' then
-		set_macro_page(2, 18)
+		set_macro_page(1, 12)
 	elseif player.sub_job == 'DNC' then
-		set_macro_page(10, 18)
+		set_macro_page(1, 12)
 	elseif player.sub_job == 'NIN' then
-		set_macro_page(5, 18)
+		set_macro_page(1, 12)
 	else
-		set_macro_page(1, 18)
+		set_macro_page(1, 12)
 	end
 end
 organizer_items = {

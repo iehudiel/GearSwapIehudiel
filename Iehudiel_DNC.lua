@@ -126,7 +126,7 @@ function init_gear_sets()
     sets.Jump = {
         ammo="Aurgelmir Orb +1",
         head="Adhemar Bonnet +1",
-        neck="Etoile Gorget +2",
+        neck="Etoile Gorget +1",
         ear1="Brutal Earring",
         ear2="Sherida Earring",
         body="Horos Casaque +3",
@@ -142,7 +142,7 @@ function init_gear_sets()
     sets.precast.JA['No Foot Rise'] = {
         body={ name="Horos Casaque +1", augments={'Enhances "No Foot Rise" effect',}},
     }
-    sets.precast.JA['Trance'] = {head="Horos Tiara +3"}
+    sets.precast.JA['Trance'] = {head={ name="Horos Tiara +2", augments={'Enhances "Trance" effect',}},}
     sets.precast.JA['Grand Pas'] = {}       
     sets.precast.JA['Contradance'] = {} 
     sets.precast.JA['Saber Dance'] = {}
@@ -151,12 +151,12 @@ function init_gear_sets()
      
     sets.precast.Waltz = {
         ammo="Yamarang",
-        head={ name="Horos Tiara +1", augments={'Enhances "Trance" effect',}},
+        head={ name="Horos Tiara +2", augments={'Enhances "Trance" effect',}},
         body="Maxixi Casaque +1",
         hands="Gleti's Gauntlets",
         legs="Dashing Subligar",
         feet="Maxixi Toe Shoes +1",
-        neck="Etoile Gorget +1",
+        neck={ name="Etoile Gorget +1", augments={'Path: A',}},
         waist="Aristo Belt",
         left_ear="Telos Earring",
         right_ear="Handler's Earring +1",
@@ -167,12 +167,12 @@ function init_gear_sets()
  
     sets.precast.WaltzSelf = {
         ammo="Yamarang",
-        head={ name="Horos Tiara +1", augments={'Enhances "Trance" effect',}},
+        head={ name="Horos Tiara +2", augments={'Enhances "Trance" effect',}},
         body="Maxixi Casaque +1",
         hands="Gleti's Gauntlets",
         legs="Dashing Subligar",
         feet="Maxixi Toe Shoes +1",
-        neck="Etoile Gorget",
+        neck={ name="Etoile Gorget +1", augments={'Path: A',}},
         waist="Aristo Belt",
         left_ear="Sherida Earring",
         right_ear="Handler's Earring +1",
@@ -207,7 +207,7 @@ function init_gear_sets()
  
     sets.precast.Step = {
         ammo="Yamarang",
-        head="Maculele Tiara +2",
+        head="Maculele Tiara +3",
         body="Malignance Tabard",
         hands="Maxixi Bangles +2",
         legs="Meg. Chausses +2",
@@ -228,12 +228,18 @@ function init_gear_sets()
     sets.precast.Flourish1['Animated Flourish'] = sets.Enmity
     sets.precast.Flourish1['Violent Flourish'] = {
         ammo="Yamarang",
-        head="Malignance Chapeau",
-        body="Horos Casaque +1",
-        hands="Malignance Gloves",
+        head="Maculele Tiara +3",
+        body={ name="Horos Casaque +3", augments={'Enhances "No Foot Rise" effect',}},
+        hands="Macu. Bangles +2",
+        legs="Malignance Tights",
+        feet="Macu. Toe Sh. +2",
+        neck={ name="Etoile Gorget +1", augments={'Path: A',}},
         waist="Eschan Stone",
-        feet="Malignance Boots",
-        neck="Etoile Gorget +2"
+        left_ear="Digni. Earring",
+        right_ear={ name="Macu. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Store TP"+3',}},
+        left_ring="Stikini Ring +1",
+        right_ring="Stikini Ring +1",
+        back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Mag. Evasion+15',}},
     }
     sets.precast.Flourish1['Desperate Flourish'] = {}
  
@@ -242,7 +248,7 @@ function init_gear_sets()
      
     sets.precast.Flourish3 = {}
     sets.precast.Flourish3['Striking Flourish'] = {body="Macu. Casaque +2"}
-    sets.precast.Flourish3['Climactic Flourish'] = {head="Maculele Tiara +2",}
+    sets.precast.Flourish3['Climactic Flourish'] = {head="Maculele Tiara +3",}
  
     sets.precast.FC = {
         ammo="Staunch Tathlum",
@@ -299,7 +305,7 @@ function init_gear_sets()
  
     sets.precast.Waltz.Enmity = {
         ammo="Sapience Orb", --2
-        head="Anwig Salade",
+        head={ name="Horos Tiara +2", augments={'Enhances "Trance" effect',}},
         neck="Unmoving Collar +1", --10
         ear1="Cryptic Earring", --4
         ear2="Friomisi Earring", --2
@@ -418,7 +424,7 @@ function init_gear_sets()
  
     sets.precast.WS['Shark Bite'] = {
         ammo="Charis Feather",
-        head="Horos Tiara +3",
+        head="Horos Tiara +2",
         body="Horos Casaque +3",
         hands="Maxixi Bangles +3",
         legs="Horos Tights +3",
@@ -434,7 +440,7 @@ function init_gear_sets()
  
     sets.precast.WS['Rudra\'s Storm'] = {
         ammo="Crepuscular Pebble",
-        head="Maculele Tiara +2",
+        head="Maculele Tiara +3",
         body="Gleti's Cuirass",
         hands={ name="Nyame Gauntlets", augments={'Path: B',}},
         legs="Gleti's Breeches",
@@ -488,14 +494,14 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
  
     sets.idle = {
-        ammo="Crepuscular Pebble",
-        head="Maculele Tiara +2",
+        ammo="Staunch Tathlum",
+        head="Maculele Tiara +3",
         body="Malignance Tabard",
         hands="Malignance Gloves",
         legs="Gleti's Breeches",
         feet="Macu. Toe Sh. +2",
         neck={ name="Loricate Torque +1", augments={'Path: A',}},
-        waist="Flume Belt +1",
+        waist="Plat. Mog. Belt",
         left_ear="Telos Earring",
         right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
         left_ring="Defending Ring",
@@ -505,7 +511,7 @@ function init_gear_sets()
  
     sets.idle.Town = {
         ammo="Yamarang",
-        head="Maculele Tiara +2",
+        head="Maculele Tiara +3",
         body="Malignance Tabard",
         hands="Malignance Gloves",
         legs="Gleti's Breeches",
@@ -569,14 +575,15 @@ function init_gear_sets()
  
     -- 30% Magic Haste (20% DW to cap)
     sets.engaged.DW.MidHaste = {
-        ammo="Crepuscular Pebble",
+        ammo={ name="Coiste Bodhar", augments={'Path: A',}},
         head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
         body="Malignance Tabard",
         hands="Malignance Gloves",
-        legs={ name="Samnuha Tights", augments={'STR+7','"Dbl.Atk."+2','"Triple Atk."+1',}},
+        --legs={ name="Samnuha Tights", augments={'STR+7','"Dbl.Atk."+2','"Triple Atk."+1',}},
+        legs="Malignance Tights",
         feet="Macu. Toe Sh. +2",
         neck="Asperity Necklace",
-        waist="Cornelia's Belt",
+        waist="Kentarch Belt",
         left_ear="Telos Earring",
         right_ear="Sherida Earring",
         left_ring="Ilabrat Ring",
@@ -586,14 +593,15 @@ function init_gear_sets()
  
     -- 40% Magic Haste (8% DW to cap)
     sets.engaged.DW.HighHaste = {
-        ammo="Crepuscular Pebble",
+        ammo={ name="Coiste Bodhar", augments={'Path: A',}},
         head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
         body="Malignance Tabard",
         hands="Malignance Gloves",
-        legs={ name="Samnuha Tights", augments={'STR+7','"Dbl.Atk."+2','"Triple Atk."+1',}},
+        --legs={ name="Samnuha Tights", augments={'STR+7','"Dbl.Atk."+2','"Triple Atk."+1',}},
+        legs="Malignance Tights",
         feet="Macu. Toe Sh. +2",
         neck="Asperity Necklace",
-        waist="Cornelia's Belt",
+        waist="Kentarch Belt",
         left_ear="Telos Earring",
         right_ear="Sherida Earring",
         left_ring="Ilabrat Ring",
@@ -603,14 +611,15 @@ function init_gear_sets()
  
     -- 45% Magic Haste (0% DW to cap)
     sets.engaged.DW.MaxHaste = {
-        ammo="Crepuscular Pebble",
+        ammo={ name="Coiste Bodhar", augments={'Path: A',}},
         head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
         body="Malignance Tabard",
         hands="Malignance Gloves",
-        legs={ name="Samnuha Tights", augments={'STR+7','"Dbl.Atk."+2','"Triple Atk."+1',}},
+        --legs={ name="Samnuha Tights", augments={'STR+7','"Dbl.Atk."+2','"Triple Atk."+1',}},
+        legs="Malignance Tights",
         feet="Macu. Toe Sh. +2",
         neck="Asperity Necklace",
-        waist="Cornelia's Belt",
+        waist="Kentarch Belt",
         left_ear="Telos Earring",
         right_ear="Sherida Earring",
         left_ring="Ilabrat Ring",
@@ -623,9 +632,9 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 -- Define three tiers of Accuracy.  These sets are cycled with the F9 Button to increase accuracy in stages as desired.
     --Max Haste Base 1220Acc
-    sets.engaged.Acc1 = {head="Horos Tiara +3"} --1267 Acc
-    sets.engaged.Acc2 = {head="Horos Tiara +3",ammo="Yamarang",hands="Malignance Gloves",} --1294Acc
-    sets.engaged.Acc3 = {head="Horos Tiara +3",ammo="Yamarang",hands="Malignance Gloves",body="Horos Casaque +3",legs="Mummu Khecks +2",feet="Horos Toe Shoes +3"} --1321Acc legs="Malignance Tights"
+    sets.engaged.Acc1 = {head="Maculele Tiara +3",} --1267 Acc
+    sets.engaged.Acc2 = {head="Maculele Tiara +3",ammo="Yamarang",hands="Malignance Gloves"} --1294Acc
+    sets.engaged.Acc3 = {head="Maculele Tiara +3",ammo="Yamarang",hands="Malignance Gloves",body="Horos Casaque +3",legs="Malignance Tights",feet="Horos Toe Shoes +3"} --1321Acc legs="Malignance Tights"
 -- Base Shield
     sets.engaged.LowAcc = set_combine(sets.engaged, sets.engaged.Acc1)
     sets.engaged.MidAcc = set_combine(sets.engaged, sets.engaged.Acc2)
@@ -849,11 +858,16 @@ function init_gear_sets()
     ---------------------------------------- Special Sets ------------------------------------------
     ------------------------------------------------------------------------------------------------
      
---  sets.buff.Doom = {}
+    sets.buff.Doom = {
+        left_ring="Blenmot's Ring +1",
+        right_ring="Blenmot's Ring +1",
+    }
 --  sets.buff['Saber Dance'] = {legs="Horos Tights +3"}
 --  sets.buff['Fan Dance'] = {hands="Horos Bangles +3"}
---  sets.buff['Closed Position'] = {feet="Horos T. Shoes +3"}
-    sets.buff['Climactic Flourish'] = {head="Maculele Tiara +2",body="Meg. Cuirie +2"}
+    sets.buff['Closed Position'] = {feet="Horos T. Shoes +3"}
+    sets.buff['Climactic Flourish'] = {
+        head="Maculele Tiara +3"
+    }
     sets.Warp = {ring1="Dim. Ring (Holla)",ring2="Warp Ring",ear1="Reraise Earring",}
     sets.CP = {back="Mecisto. Mantle"}
     sets.MP = {Ear2="Ethereal Earring",Waist="Flume Belt +1",}
