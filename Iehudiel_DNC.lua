@@ -140,7 +140,7 @@ function init_gear_sets()
     }
      
     sets.precast.JA['No Foot Rise'] = {
-        body={ name="Horos Casaque +1", augments={'Enhances "No Foot Rise" effect',}},
+        body="Horos Casaque +3",
     }
     sets.precast.JA['Trance'] = {head={ name="Horos Tiara +2", augments={'Enhances "Trance" effect',}},}
     sets.precast.JA['Grand Pas'] = {}       
