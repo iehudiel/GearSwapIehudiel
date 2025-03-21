@@ -251,7 +251,7 @@ function init_gear_sets()
 		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
 		neck="Diemer Gorget",
-		waist="Kentarch Belt",
+		waist="Kentarch Belt +1",
 		left_ear="Telos Earring",
 		right_ear="Digni. Earring",
 		left_ring="Petrov Ring",
@@ -295,7 +295,7 @@ function init_gear_sets()
     	legs="Sakpata's Cuisses",
     	feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     	neck="Loricate Torque +1",
-    	waist="Kentarch Belt",
+    	waist="Kentarch Belt +1",
     	left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     	right_ear={ name="Chev. Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+10','Mag. Acc.+10',}},
     	left_ring="Moonlight Ring",
@@ -410,7 +410,7 @@ function init_gear_sets()
 		legs={ name="Valor. Hose", augments={'Weapon skill damage +3%','STR+9','Attack+7',}},
 		feet="Sulev. Leggings +2",
 		neck="Asperity Necklace",
-		waist="Kentarch Belt",
+		waist="Kentarch Belt +1",
 		left_ear="Digni. Earring",
 		right_ear="Ishvara Earring",
 		left_ring="Epaminondas's Ring",
@@ -427,7 +427,7 @@ function init_gear_sets()
 		legs={ name="Valor. Hose", augments={'Weapon skill damage +3%','STR+9','Attack+7',}},
 		feet="Sulev. Leggings +2",
 		neck="Asperity Necklace",
-		waist="Kentarch Belt",
+		waist="Kentarch Belt +1",
 		left_ear="Digni. Earring",
 		right_ear="Ishvara Earring",
 		left_ring="Epaminondas's Ring",
@@ -444,7 +444,7 @@ function init_gear_sets()
 		legs={ name="Valor. Hose", augments={'Weapon skill damage +3%','STR+9','Attack+7',}},
 		feet="Sulev. Leggings +2",
 		neck="Asperity Necklace",
-		waist="Kentarch Belt",
+		waist="Kentarch Belt +1",
 		left_ear="Digni. Earring",
 		right_ear="Ishvara Earring",
 		left_ring="Epaminondas's Ring",
@@ -593,6 +593,9 @@ function init_gear_sets()
 	sets.precast.JA['Invincible'] = set_combine(sets.Enmity, {legs={ name="Cab. Breeches +1", augments={'Enhances "Invincible" effect',}},})
     sets.precast.JA['Shield Bash'] = {
 		sub="Aegis",
+		hands={ name="Cab. Gauntlets +2", augments={'Enhances "Chivalry" effect',}},
+	}
+	sets.precast.JA['Chivalry'] = {
 		hands={ name="Cab. Gauntlets +2", augments={'Enhances "Chivalry" effect',}},
 	}
 	sets.precast.JA['Holy Circle'] = set_combine(sets.Enmity, {feet="Rev. Leggings +3",})
