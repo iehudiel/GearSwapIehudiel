@@ -279,7 +279,9 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 
     -- Precast sets to enhance JAs
-    sets.precast.JA['Chainspell'] = {body={ name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}},}
+    sets.precast.JA['Chainspell'] = {
+        body={ name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}},
+    }
 
     -- Fast cast sets for spells
     sets.precast.FC = {
@@ -329,7 +331,9 @@ function init_gear_sets()
         waist="Shinjutsu-no-Obi +1", --5
         })
 
-    sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak", sub="Ammurapi Shield", waist="Shinjutsu-no-Obi +1"})
+    sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {
+        main="Daybreak", sub="Ammurapi Shield", waist="Shinjutsu-no-Obi +1"
+    })
     sets.precast.Storm = set_combine(sets.precast.FC, {name="Stikini Ring +1"})
     sets.precast.FC.Utsusemi = sets.precast.FC.Cure
 
@@ -676,7 +680,7 @@ function init_gear_sets()
         feet={ name="Vitiation Boots +3", augments={'Immunobreak Chance',}},
         neck={ name="Dls. Torque +2", augments={'Path: A',}},
         waist="Rumination Sash",
-        left_ear="Malignance Earring",
+        left_ear="Regal Earring",
         right_ear="Snotra Earring",
         left_ring="Stikini Ring +1",
         right_ring="Stikini Ring +1",
@@ -685,6 +689,9 @@ function init_gear_sets()
 
     sets.midcast.MndEnfeeblesAcc = set_combine(sets.midcast.MndEnfeebles, {
         body="Atrophy Tabard +3",
+        neck="Null Loop",
+        back="Null Shawl",
+        range="Kaja bow",
     })
 
     sets.midcast.MndEnfeeblesEffect = set_combine(sets.midcast.MndEnfeebles, {
@@ -705,7 +712,9 @@ function init_gear_sets()
         body="Atrophy Tabard +3",
         hands="Kaykaus Cuffs +1",
         ring1="Stikini Ring +1",
+        neck="Null Loop",
         waist="Acuity Belt +1",
+        back="Null Shawl",
         })
 
     sets.midcast.IntEnfeeblesEffect = set_combine(sets.midcast.IntEnfeebles, {
@@ -974,7 +983,7 @@ function init_gear_sets()
 		legs="Malignance Tights",
 		feet="Nyame Sollerets",
 		neck="Anu Torque",
-		waist="Kentarch Belt",
+		waist="Kentarch Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
 		left_ring="Petrov Ring",
@@ -995,7 +1004,7 @@ function init_gear_sets()
 		legs="Malignance Tights",
 		feet="Nyame Sollerets",
 		neck="Anu Torque",
-		waist="Kentarch Belt",
+		waist="Kentarch Belt +1",
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
 		left_ring="Petrov Ring",

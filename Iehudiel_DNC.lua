@@ -140,7 +140,7 @@ function init_gear_sets()
     }
      
     sets.precast.JA['No Foot Rise'] = {
-        body={ name="Horos Casaque +1", augments={'Enhances "No Foot Rise" effect',}},
+        body="Horos Casaque +3",
     }
     sets.precast.JA['Trance'] = {head={ name="Horos Tiara +2", augments={'Enhances "Trance" effect',}},}
     sets.precast.JA['Grand Pas'] = {}       
@@ -213,7 +213,7 @@ function init_gear_sets()
         legs="Meg. Chausses +2",
         feet={ name="Horos T. Shoes +3", augments={'Enhances "Closed Position" effect',}},
         neck="Clotharius Torque",
-        waist="Kentarch Belt",
+        waist="Kentarch Belt +1",
         left_ear="Mache Earring +1",
         right_ear="Telos Earring",
         left_ring="Chirich Ring",
@@ -444,7 +444,7 @@ function init_gear_sets()
         body="Gleti's Cuirass",
         hands={ name="Nyame Gauntlets", augments={'Path: B',}},
         legs="Gleti's Breeches",
-        feet="Tandava Crackows",
+        
         neck="Clotharius Torque",
         waist="Sarissapho. Belt",
         left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
@@ -583,7 +583,7 @@ function init_gear_sets()
         legs="Malignance Tights",
         feet="Macu. Toe Sh. +2",
         neck="Asperity Necklace",
-        waist="Kentarch Belt",
+        waist="Kentarch Belt +1",
         left_ear="Telos Earring",
         right_ear="Sherida Earring",
         left_ring="Ilabrat Ring",
@@ -601,7 +601,7 @@ function init_gear_sets()
         legs="Malignance Tights",
         feet="Macu. Toe Sh. +2",
         neck="Asperity Necklace",
-        waist="Kentarch Belt",
+        waist="Kentarch Belt +1",
         left_ear="Telos Earring",
         right_ear="Sherida Earring",
         left_ring="Ilabrat Ring",
@@ -619,7 +619,7 @@ function init_gear_sets()
         legs="Malignance Tights",
         feet="Macu. Toe Sh. +2",
         neck="Asperity Necklace",
-        waist="Kentarch Belt",
+        waist="Kentarch Belt +1",
         left_ear="Telos Earring",
         right_ear="Sherida Earring",
         left_ring="Ilabrat Ring",

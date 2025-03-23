@@ -85,7 +85,7 @@ function get_sets()
 		neck={ name="Loricate Torque +1", augments={'Path: A',}},
 		waist="Carrier's Sash",
 		left_ear="Ethereal Earring",
-		right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','Latent effect: "Refresh"+1',}},
+		right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Damage taken-3%',}},
 		left_ring="Stikini Ring +1",
 		right_ring="Stikini Ring +1",
 		back="Solemnity Cape",
@@ -108,24 +108,38 @@ function get_sets()
 		neck={ name="Loricate Torque +1", augments={'Path: A',}},
 		waist="Carrier's Sash",
 		left_ear="Ethereal Earring",
-		right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','Latent effect: "Refresh"+1',}},
+		right_ear={ name="Ebers Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Damage taken-3%',}},
 		left_ring="Defending Ring",
 		right_ring="Stikini Ring +1",
 		back="Solemnity Cape",
 	}
 
-	sets.Precast = {}
-	-- Fastcast Set --
-	sets.Precast.FastCast = {
-		main={ name="Gada", augments={'"Fast Cast"+4','Mag. Acc.+22','"Mag.Atk.Bns."+19','DMG:+5',}},
-		sub="Culminus",
+	sets.Precast = {
+		main={ name="Grioavolr", augments={'"Fast Cast"+3','MND+15','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +5',}},
 		ammo="Staunch Tathlum",
 		head="Ebers Cap +2",
 		body="Inyanga Jubbah +2",
 		hands={ name="Kaykaus Cuffs", augments={'MP+60','Spell interruption rate down +10%','"Cure" spellcasting time -5%',}},
 		legs={ name="Lengo Pants", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Refresh"+1',}},
 		feet="Regal Pumps +1",
-		neck="Nodens Gorget",
+		neck={ name="Loricate Torque +1", augments={'Path: A',}},
+		waist="Witful Belt",
+		left_ear="Malignance Earring",
+		right_ear="Etiolation Earring",
+		left_ring="Kishar Ring",
+		right_ring="Lebeche Ring",
+		back="Perimede Cape",
+	}
+	-- Fastcast Set --
+	sets.Precast.FastCast = {
+		main={ name="Grioavolr", augments={'"Fast Cast"+3','MND+15','Mag. Acc.+25','"Mag.Atk.Bns."+15','Magic Damage +5',}},
+		ammo="Staunch Tathlum",
+		head="Ebers Cap +2",
+		body="Inyanga Jubbah +2",
+		hands={ name="Kaykaus Cuffs", augments={'MP+60','Spell interruption rate down +10%','"Cure" spellcasting time -5%',}},
+		legs={ name="Lengo Pants", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Refresh"+1',}},
+		feet="Regal Pumps +1",
+		neck={ name="Loricate Torque +1", augments={'Path: A',}},
 		waist="Witful Belt",
 		left_ear="Malignance Earring",
 		right_ear="Etiolation Earring",
@@ -226,7 +240,7 @@ function get_sets()
 
 	sets.Midcast['Enhancing Magic'] = {
 		main={ name="Gada", augments={'"Fast Cast"+4','Mag. Acc.+22','"Mag.Atk.Bns."+19','DMG:+5',}},
-		sub="Culminus",
+		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head="Befouled Crown",
 		body={ name="Telchine Chas.", augments={'Mag. Acc.+11 "Mag.Atk.Bns."+11','"Cure" spellcasting time -5%','Enh. Mag. eff. dur. +9',}},
@@ -245,7 +259,7 @@ function get_sets()
 	-- Barspells Set --
 	sets.Midcast.Bar = {
 		main="Beneficus",
-		sub="Thuellaic Ecu +1",
+		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head="Ebers Cap +2",
 		body="Ebers Bliaut +2",

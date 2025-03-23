@@ -610,7 +610,7 @@ function init_gear_sets()
         legs="Eri. Leg Guards +2",
         feet="Nyame Sollerets",
         neck="Anu Torque",
-        waist="Kentarch Belt",
+        waist="Kentarch Belt +1",
         left_ear="Sherida Earring",
         right_ear="Telos Earring",
         left_ring="Moonlight Ring",
