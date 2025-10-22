@@ -827,7 +827,7 @@ function init_gear_sets()
     -- Job-specific buff sets
     sets.buff.ComposureOther = {
         main={ name="Pukulatmuj +1", augments={'Path: A',}},
-		sub="Ammurapi Shield",
+		sub="Diamond Aspis",
 		ammo="Staunch Tathlum",
 		head="Befouled Crown",
 		body="Lethargy Sayon +3",
@@ -845,7 +845,7 @@ function init_gear_sets()
 
     sets.buff.Saboteur = {
         main={ name="Crocea Mors", augments={'Path: C',}},
-		sub="Thuellaic Ecu +1",
+		sub="Diamond Aspis",
 		ammo="Regal Gem",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		body="Atrophy Tabard +3",
@@ -868,7 +868,7 @@ function init_gear_sets()
 
     sets.idle = {
         main="Excalibur",
-		sub="Culminus",
+		sub="Diamond Aspis",
 		ammo="Pemphredo Tathlum",
 		head={ name="Viti. Chapeau +3", augments={'Enfeebling Magic duration','Magic Accuracy',}},
 		body="Lethargy Sayon +3",

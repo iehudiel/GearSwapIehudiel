@@ -250,12 +250,12 @@ function init_gear_sets()
 		hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
 		legs="Sakpata's Cuisses",
 		feet="Sakpata's Leggings",
-		neck="Diemer Gorget",
+		neck="Null Loop",
 		waist="Kentarch Belt +1",
 		left_ear="Telos Earring",
 		right_ear="Digni. Earring",
 		left_ring="Petrov Ring",
-		left_ring="Moonlight Ring",
+		right_ring="Moonlight Ring",
 		back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','VIT+10','Enmity+10','Damage taken-5%',}},
 	}
 	
@@ -752,7 +752,7 @@ function init_gear_sets()
 		hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
 		legs="Sakpata's Cuisses",
 		feet="Rev. Leggings +3",
-		neck={ name="Unmoving Collar +1", augments={'Path: A',}},
+		neck="Sacro Gorget",
 		waist="Plat. Mog. Belt",
 		left_ear="Etiolation Earring",
 		right_ear={ name="Nourish. Earring +1", augments={'Path: A',}},
