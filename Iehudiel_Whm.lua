@@ -203,7 +203,7 @@ function get_sets()
 		body="Ebers Bliaut +2",
 		hands="Theophany Mitts +2",
 		legs="Ebers Pant. +2",
-		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
+		feet={ name="Piety Duckbills +2", augments={'Enhances "Afflatus Solace" effect',}},
 		neck="Nodens Gorget",
 		waist="Rumination Sash",
 		left_ear={ name="Nourish. Earring +1", augments={'Path: A',}},
@@ -225,7 +225,7 @@ function get_sets()
 		body="Theo. Bliaut +3",
 		hands="Theophany Mitts +2",
 		legs="Ebers Pant. +2",
-		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
+		feet={ name="Piety Duckbills +2", augments={'Enhances "Afflatus Solace" effect',}},
 		neck="Nodens Gorget",
 		waist="Rumination Sash",
 		left_ear={ name="Nourish. Earring +1", augments={'Path: A',}},
@@ -246,7 +246,7 @@ function get_sets()
 		body={ name="Telchine Chas.", augments={'Mag. Acc.+11 "Mag.Atk.Bns."+11','"Cure" spellcasting time -5%','Enh. Mag. eff. dur. +9',}},
 		hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +9',}},
 		legs={ name="Telchine Braconi", augments={'Mag. Acc.+22','"Cure" spellcasting time -3%','Enh. Mag. eff. dur. +9',}},
-		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
+		feet={ name="Piety Duckbills +2", augments={'Enhances "Afflatus Solace" effect',}},
 		neck="Enhancing Torque",
 		waist="Embla Sash",
 		left_ear="Halasz Earring",
@@ -265,7 +265,7 @@ function get_sets()
 		body="Ebers Bliaut +2",
 		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
 		legs={ name="Telchine Braconi", augments={'Mag. Acc.+22','"Cure" spellcasting time -3%','Enh. Mag. eff. dur. +9',}},
-		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
+		feet={ name="Piety Duckbills +2", augments={'Enhances "Afflatus Solace" effect',}},
 		neck="Enhancing Torque",
 		waist="Embla Sash",
 		left_ear="Mendi. Earring",
@@ -351,7 +351,7 @@ function get_sets()
 		body="Theo. Bliaut +3",
 		hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
 		legs={ name="Chironic Hose", augments={'Mag. Acc.+20','Pet: Mag. Acc.+22','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-		feet={ name="Piety Duckbills +1", augments={'Enhances "Afflatus Solace" effect',}},
+		feet={ name="Piety Duckbills +2", augments={'Enhances "Afflatus Solace" effect',}},
 		neck="Imbodla Necklace",
 		waist="Eschan Stone",
 		left_ear="Regal Earring",
@@ -474,7 +474,7 @@ function midcast(spell,action)
 				equipSet = set_combine(equipSet,{main="Chatoyant staff",back="Twilight Cape",waist="Hachirin-no-Obi"})
 			end
 		elseif spell.english == "Protectra V" then
-			equipSet = set_combine(equipSet,{feet="Piety duckbills"})
+			equipSet = set_combine(equipSet,{feet="Piety duckbills +2"})
 		elseif spell.english == "Shellra V" then
 			equipSet = set_combine(equipSet,{legs="Piety Pantaloons"})
 		elseif spell.english == "Stoneskin" then

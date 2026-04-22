@@ -54,7 +54,7 @@ function get_sets()
       ammo={ name="Coiste Bodhar", augments={'Path: A',}},
       head="Kasuga Kabuto +2",
       body="Kasuga Domaru +2",
-      hands="Wakido Kote +2",
+      hands="Wakido Kote +3",
       legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
       feet="Flam. Gambieras +2",
       neck="Sam. Nodowa +1",
@@ -71,7 +71,7 @@ function get_sets()
       ammo={ name="Coiste Bodhar", augments={'Path: A',}},
       head="Kasuga Kabuto +2",
       body="Kasuga Domaru +2",
-      hands="Wakido Kote +2",
+      hands="Wakido Kote +3",
       legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
       feet="Flam. Gambieras +2",
       neck="Sam. Nodowa +1",
@@ -95,7 +95,7 @@ function get_sets()
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head="Kasuga Kabuto +2",
 		body="Kasuga Domaru +2",
-		hands="Wakido Kote +2",
+		hands="Wakido Kote +3",
 		--legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
     legs="Kasuga Haidate +2",
 		feet="Flam. Gambieras +2",
@@ -113,7 +113,7 @@ function get_sets()
       ammo={ name="Coiste Bodhar", augments={'Path: A',}},
       head="Kasuga Kabuto +2",
       body="Kasuga Domaru +2",
-      hands="Wakido Kote +2",
+      hands="Wakido Kote +3",
       legs="Mpaca's Hose",
       feet="Mpaca's Boots",
       neck="Sam. Nodowa +1",
@@ -145,7 +145,7 @@ function get_sets()
       ammo={ name="Coiste Bodhar", augments={'Path: A',}},
       head="Nyame helm",
       body="Nyame Mail",
-      hands={ name="Wakido Kote +3", augments={'Enhances "Blade Bash" effect',}},
+      hands="Wakido Kote +3",
       legs="Nyame Flanchard",
       feet="Nyame Sollerets",
       neck="Samurai's nodowa +2",
@@ -164,7 +164,7 @@ function get_sets()
       ammo={ name="Coiste Bodhar", augments={'Path: A',}},
       head="Nyame helm",
       body="Nyame Mail",
-      hands={ name="Wakido Kote +3", augments={'Enhances "Blade Bash" effect',}},
+      hands="Wakido Kote +3",
       legs="Tatenashi Haidate +1",
       feet="Flamma gambieras +2",
       neck="Samurai Nodowa +2",
@@ -507,7 +507,7 @@ function get_sets()
       ammo={ name="Coiste Bodhar", augments={'Path: A',}},
       head="Mpaca's Cap",
       body="Mpaca's Doublet",
-      hands="Wakido Kote +2",
+      hands="Wakido Kote +3",
       legs="Mpaca's Hose",
       feet="Mpaca's Boots",
       neck="Sam. Nodowa +1",
@@ -523,7 +523,7 @@ function get_sets()
 	ammo="Staunch Tathlum",
     head="Kendatsuba Jinpachi +1",
     body="Kendatsuba Samue +1",
-    hands={ name="Wakido Kote +3", augments={'Enhances "Blade Bash" effect',}},
+    hands="Wakido Kote +3",
     legs="Tatenashi Haidate +1",
     feet="Kendatsuba Sune-Ate +1",
     neck="Samurai Nodowa +2",
@@ -556,7 +556,7 @@ function get_sets()
 		sets.JA.Sekkanoki = {hands="Unkai Kote +1"}
 		
 		sets.JA.Hasso = {legs="Unkai Haidate +2",
-							hands="Wakido kote +2"}
+							hands="Wakido Kote +3"}
 							
 		
 		

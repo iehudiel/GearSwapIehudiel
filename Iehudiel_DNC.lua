@@ -391,19 +391,21 @@ function init_gear_sets()
     }
  
     sets.precast.WS['Pyrrhic Kleos'] = {
-        ammo="Crepuscular Pebble",
-        head="Gleti's Mask",
+        main="Terpsichore",
+        sub="Gleti's Knife",
+        ammo="Coiste Bodhar",
+        head="Maculele Tiara +3",
         body="Gleti's Cuirass",
-        hands="Gleti's Gauntlets",
+        hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
         legs="Gleti's Breeches",
-        feet="Gleti's Boots",
+        feet={ name="Lustra. Leggings +1", augments={'HP+65','STR+15','DEX+15',}},
         neck="Asperity Necklace",
-        waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+        waist="Sailfi Belt +1",
         left_ear="Sherida Earring",
         right_ear={ name="Macu. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Store TP"+3',}},
         left_ring="Regal Ring",
         right_ring="Gere Ring",
-        back={ name="Senuna's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+2','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
+        back={ name="Senuna's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+2','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
         }
  
     sets.precast.WS['Evisceration'] = {
